@@ -18,6 +18,7 @@
 - (void)showExplorer;
 - (void)hideExplorer;
 - (void)toggleExplorer;
+- (void)openMenu;
 
 #pragma mark - Network Debugging
 

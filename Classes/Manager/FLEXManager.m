@@ -90,6 +90,11 @@
     }
 }
 
+- (void)openMenu {
+    [self showExplorer];
+    [self.explorerViewController toggleMenuTool];
+}
+
 - (BOOL)isHidden
 {
     return self.explorerWindow.isHidden;

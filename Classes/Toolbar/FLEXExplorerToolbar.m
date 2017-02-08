@@ -51,21 +51,21 @@
         [self addSubview:self.globalsItem];
         [toolbarItems addObject:self.globalsItem];
         
-        UIImage *listIcon = [FLEXResources listIcon];
-        self.hierarchyItem = [FLEXToolbarItem toolbarItemWithTitle:@"views" image:listIcon];
-        [self addSubview:self.hierarchyItem];
-        [toolbarItems addObject:self.hierarchyItem];
-        
-        UIImage *selectIcon = [FLEXResources selectIcon];
-        self.selectItem = [FLEXToolbarItem toolbarItemWithTitle:@"select" image:selectIcon];
-        [self addSubview:self.selectItem];
-        [toolbarItems addObject:self.selectItem];
-        
-        UIImage *moveIcon = [FLEXResources moveIcon];
-        self.moveItem = [FLEXToolbarItem toolbarItemWithTitle:@"move" image:moveIcon];
-        [self addSubview:self.moveItem];
-        [toolbarItems addObject:self.moveItem];
-        
+//        UIImage *listIcon = [FLEXResources listIcon];
+//        self.hierarchyItem = [FLEXToolbarItem toolbarItemWithTitle:@"views" image:listIcon];
+//        [self addSubview:self.hierarchyItem];
+//        [toolbarItems addObject:self.hierarchyItem];
+//        
+//        UIImage *selectIcon = [FLEXResources selectIcon];
+//        self.selectItem = [FLEXToolbarItem toolbarItemWithTitle:@"select" image:selectIcon];
+//        [self addSubview:self.selectItem];
+//        [toolbarItems addObject:self.selectItem];
+//        
+//        UIImage *moveIcon = [FLEXResources moveIcon];
+//        self.moveItem = [FLEXToolbarItem toolbarItemWithTitle:@"move" image:moveIcon];
+//        [self addSubview:self.moveItem];
+//        [toolbarItems addObject:self.moveItem];
+
         UIImage *closeIcon = [FLEXResources closeIcon];
         self.closeItem = [FLEXToolbarItem toolbarItemWithTitle:@"close" image:closeIcon];
         [self addSubview:self.closeItem];

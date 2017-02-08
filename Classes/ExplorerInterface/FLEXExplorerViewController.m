@@ -359,9 +359,9 @@ typedef NS_ENUM(NSUInteger, FLEXExplorerMode) {
 
 - (void)setupToolbarActions
 {
-    [self.explorerToolbar.selectItem addTarget:self action:@selector(selectButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.explorerToolbar.hierarchyItem addTarget:self action:@selector(hierarchyButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.explorerToolbar.moveItem addTarget:self action:@selector(moveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.explorerToolbar.selectItem addTarget:self action:@selector(selectButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.explorerToolbar.hierarchyItem addTarget:self action:@selector(hierarchyButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.explorerToolbar.moveItem addTarget:self action:@selector(moveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.explorerToolbar.globalsItem addTarget:self action:@selector(globalsButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.explorerToolbar.closeItem addTarget:self action:@selector(closeButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 }
@@ -736,6 +736,8 @@ typedef NS_ENUM(NSUInteger, FLEXExplorerMode) {
 - (void)globalsViewControllerDidFinish:(FLEXGlobalsTableViewController *)globalsViewController
 {
     [self resignKeyAndDismissViewControllerAnimated:YES completion:nil];
+    self.currentMode = FLEXExplorerModeDefault;
+    [self.delegate explorerViewControllerDidFinish:self];
 }
 
 
